@@ -94,7 +94,7 @@ TestCase::TestResult FunctionSideEffects::run(std::ostream& _stream, std::string
 		solidity::test::CommonOptions::get().evmVersion(),
 		std::nullopt
 	);
-	std::map<FunctionNameIdentifier, SideEffects> functionSideEffects = SideEffectsPropagator::sideEffects(
+	std::map<FunctionHandle, SideEffects> functionSideEffects = SideEffectsPropagator::sideEffects(
 		dialect,
 		CallGraphGenerator::callGraph(obj.code()->root())
 	);
