@@ -196,6 +196,7 @@ and any user interface calls the automatically generated ``balances`` function f
                 "Receiver: " + Coin.balances.call(result.args.to));
         }
     })
+    Coin.events.Sent().on('error', console.error);
 
 .. index:: coin
 
