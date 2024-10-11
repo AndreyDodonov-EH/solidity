@@ -1,0 +1,15 @@
+{
+    "contracts": {
+        "C": {
+            "C": {
+                "irAst": null,
+                "irOptimizedAst": null
+            }
+        }
+    },
+    "sources": {
+        "C": {
+            "id": 0
+        }
+    }
+}
